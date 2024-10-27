@@ -7,18 +7,17 @@
   <link rel="shortcut icon" href="assets/img/tnt_favicon.png" type="image/x-icon">
   <link rel="favicon" href="assets/img/tnt_favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/materialize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <style>
 
-    @font-face {
-      font-family: 'Monaco';
-      font-style: normal;
-      font-weight: normal;
-      src: url('./assets/fonts/Monaco.woff');
-    }
-
     * {
-      font-family: Monaco;
+      font-family: "Copse", serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     .theme-color-bg {
@@ -33,30 +32,62 @@
 </head>
 <body>
   
-  <header class="theme-color-bg section">
-    <nav class="transparent z-depth-0">
+  <header>
+    <nav class="theme-color-bg z-depth-0">
       <div class="container">
         <div class="row">
-          <div class="col s2">
+          <div class="col s6">
             <span>thisisneverthat®</span>
           </div>
-          <div class="col s2 offset-l3">
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Products</a></li>
-              <li> <a href="">Contact</a></li>
+          <div class="col s6">
+            <ul class="right">
+              <li>
+                <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+                  <i class='bx bx-menu white-text'></i>
+                </a>
+              </li>
             </ul>
-          </div>
-          <div class="col s2 push-l1 right">
-            <a href="">Login</a>
           </div>
         </div>
       </div>
     </nav>
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="images/office.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+        <a href="#name"><span class="white-text name">John Doe</span></a>
+        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+    </ul>
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="./assets/img/fall-winter-hero.webp"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>Fall/Winter 2024 Collection</h3>
+            <a href="" class="btn btn-large btn-flat theme-color-bg white-text">SHOP NOW</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </header>
   <main></main>
   <footer></footer>
 
+  <script src="./assets/js/jquery-3.7.1.js"></script>
   <script src="./assets/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slider({height: 640, indicators: false});
+      $('.sidenav').sidenav();
+    });
+  </script>
 </body>
 </html>
