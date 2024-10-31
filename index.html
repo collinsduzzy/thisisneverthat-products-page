@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Copse&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <!-- Boxicons CSS -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   
   <style>
@@ -28,6 +30,19 @@
       color: #102E4A !important;
     }
 
+    li > a > span {
+      margin-left: 10px !important;
+      margin-top: -5px !important;
+
+    }
+
+    li > a > img {
+      margin-top: 10px !important;
+    }
+
+    li a.menu-item {
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -43,7 +58,7 @@
             <ul class="right">
               <li>
                 <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
-                  <i class='bx bx-menu white-text'></i>
+                  <i class='bx bx-menu-alt-right'></i>
                 </a>
               </li>
             </ul>
@@ -51,20 +66,38 @@
         </div>
       </div>
     </nav>
-    <ul id="slide-out" class="sidenav">
-      <li><div class="user-view">
-        <div class="background">
-          <img src="images/office.jpg">
-        </div>
-        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-        <a href="#name"><span class="white-text name">John Doe</span></a>
-        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="subheader">Subheader</a></li>
-      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+
+    <ul id="slide-out" class="sidenav theme-color-txt">
+      <li class="center-align">
+        <p>thisisneverthat®</p>
+        <p>Fall/Winter 2024 Collection</p>
+        <div class="divider"></div>
+      </li>
+      <li>
+        <a href="#!" class="valign-wrapper menu-item">
+          <img src="./assets/img/sweater_13437933.png" alt="">
+          <span class="theme-color-txt">Outerwear</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="valign-wrapper menu-item">
+          <img src="./assets/img/hawaiian-shirt_13437987.png" alt="">
+          <span class="theme-color-txt">Shirts</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="valign-wrapper menu-item">
+          <img src="./assets/img/jeans_13438021.png" alt="">
+          <span class="theme-color-txt">Pants</span>
+        </a>
+      </li>
+      <li>
+        <a href="#!" class="valign-wrapper menu-item">
+          <img src="./assets/img/cap_13437977.png" alt="">
+          <span class="theme-color-txt">Headwear</span>
+        </a>
+      </li>
+      <div class="divider"></div>
     </ul>
     <div class="slider">
       <ul class="slides">
@@ -78,7 +111,9 @@
       </ul>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section class="section"></section>
+  </main>
   <footer></footer>
 
   <script src="./assets/js/jquery-3.7.1.js"></script>
