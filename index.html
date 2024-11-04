@@ -55,7 +55,12 @@
     left: 15%;
     width: 70%;
     opacity: 0;
-}
+    }
+
+    .holder {
+      margin: 0 auto;
+      max-width: 75% !important;
+    }
   </style>
 </head>
 <body>
@@ -125,7 +130,7 @@
     </div>
   </header>
   <main>
-    <section class="section">
+    <section class="section holder">
       <div class="section">
         <div class="row">
           <div class="col s12 l3">
@@ -256,13 +261,51 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="holder">
+      <div class="row">
+        <div class="col s12 l4">
+          <span class="theme-color-txt bold-txt">CATEGORIES</span>
+          <p>Outerwear</p>
+          <p>Shirts</p>
+          <p>Pants</p>
+          <p>Headwear</p>
+          <p>Accessories</p>
+        </div>
+        <div class="col s12 l4 center-align">
+          
+
+        </div>
+        <div class="col s12 l4 right-align">
+          <span class="theme-color-txt bold-txt">SOCIALS</span>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>X (Formerly Twitter)</p>
+          <p>info@thisisneverthat.com</p>
+          
+        </div>
+      </div>
+      <div class="divider theme-color-bg"></div>
+      <br>
+      <div class="row">
+        <div class="col s12 l6">
+          <span>  Tokyo  </span>
+          <span>•  London  </span>
+          <span>•  New York  </span>
+          <span>•  Paris  </span>
+        </div>
+        <div class="col s12 l6 right-align">
+          <span>&copy; 2024 thisisneverthat® </span>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./assets/js/jquery-3.7.1.js"></script>
   <script src="./assets/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
-      $('.slider').slider({height: 1080, indicators: false});
+      $('.slider').slider({height: 900, indicators: false});
       $('.sidenav').sidenav();
       $('.materialboxed').materialbox();
     });
